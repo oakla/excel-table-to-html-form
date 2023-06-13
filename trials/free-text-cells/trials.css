@@ -1,0 +1,66 @@
+/* * {
+  box-sizing: border-box;
+} */
+body {
+  font-family: "Heebo", sans-serif;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+h1 {
+  border-bottom: 5px solid #9ccc65;
+}
+h2 {
+  border-bottom: 2px solid #c5e1a5;
+}
+
+ul {
+  list-style-type: none;
+  padding: 1rem;
+  margin: 0;
+}
+
+.textarea {
+  border: 1px solid #ccc;
+  font-family: inherit;
+  font-size: inherit;
+  padding: 1px 6px;
+}
+
+.textarea {
+  /* display: block; */
+  width: 100%;
+  overflow: hidden;
+  resize: both;
+  min-height: 40px;
+  line-height: 20px;
+}
+
+.textarea[contenteditable]:empty::before {
+  content: "Placeholder still possible";
+  color: gray;
+}
+
+.template {
+  border-style: solid;
+  width: 750px;
+  border-collapse: collapse;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.section-title {
+  height: 20.25pt;
+  grid-column: span 2;
+
+}
+
+.field {
+  white-space: normal;
+  vertical-align: top;
+}
+
+.field__input {
+  background: #DDEBF7;
+}
+

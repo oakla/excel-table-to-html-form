@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel=stylesheet href="trials.css">
+    <title>Cell tests</title>
+</head>
+
+<body>
+    <h2>div + textarea + label</h2>
+    <div class="template">
+
+        <div class="section-title">
+            <span>Section Title</span>
+        </div>
+        <!-- <div> -->
+            <div>
+                <label class="field__label for="Entity-Name-1">Entity Name</label>
+            </div>
+            <div>
+                <textarea class="field__input" id="Entity-Name-1"
+                placeholder="text goes here"></textarea>
+            </div>
+        <!-- </div>
+        <div> -->
+            <div>
+                <label class="field__label for="id-1">id</label>
+            </div>
+            <div>
+                <textarea class="field__input" id="id-1"
+                placeholder="text goes here"></textarea>
+            </div>
+        <!-- </div> -->
+    </div>
+    <br>
+    <hr>
+
+    <h2>Content-Editable span</h2>
+    <div class="template">
+
+        <div class="section-title">Section Title</div>
+        <div>
+            <strong class="field__label">Entity Name:</strong>
+            <span 
+            class="field__input textarea" role="textbox" contenteditable></span>
+        </div>
+        <div>
+            <strong class="field__label">id:</strong>
+            <span 
+            class="field__input textarea" role="textbox" contenteditable></span>
+        </div>
+    </div>
+        <br>
+        <hr>
+
+    <h2>Textarea + js</h2>
+    <div class="template">
+        <div class="section-title">
+            Section Title
+        </div>
+        <!-- <div class="field"> -->
+            <label class="field__label" for="Entity-Name-2">
+                Entity Name:
+            </label>
+            <textarea class="field__input resize-ta" id="Entity-Name-2" 
+            placeholder="text goes here"></textarea>
+        <!-- </div> -->
+        <!-- <div class="field"> -->
+            <label class="field__label" for="id-2">
+                id:
+            </label>
+            <textarea class="field__input resize-ta" id="id-2"
+            placeholder="text goes here"></textarea>
+        <!-- </div> -->
+    </div>
+    <br>
+    <hr>
+
+    <h2>HTML table</h2>
+    <table>
+        <tr>
+            <th class="section-title" colspan="2">Section Title</th>
+        </tr>
+        <tr class="field">
+            <td class="field__label">
+                <label for="Entity-Name-3">Entity Name</label>
+            </td>
+            <td class="field__input">
+                <textarea class="field__input resize-ta" id="Entity-Name-3"
+                placeholder="text goes here"></textarea>
+            </td>
+        </tr>
+        <tr class="field">
+            <td class="field__label">
+                <label for="id-3">id</label></td>
+            <td class="field__input"><textarea class="field__input resize-ta" id="id-3"
+                placeholder="text goes here"></textarea></td>
+        </tr>
+    </table>
+    <br>
+    <hr>
+
+    <!-- TODO: Implement styling used in example! -->
+    <h2>MDN Example: Basic Form</h2>
+    <form class="template" method="post">
+        <div class="section-title">Section Title</div>
+        <ul>
+            <li>
+                <label class="field__label" for="Entity-Name-4">Entity Name:</label>
+                <textarea class="field__input resize-ta" id="Entity-Name-4" 
+                placeholder="text goes here"></textarea>
+            </li>
+            <li>
+                <label class="field__label" for="id-4">id:</label>
+                <textarea class="field__input resize-ta" id="id-4" 
+                placeholder="text goes here"></textarea>
+            </li>
+        </ul>
+    </form>
+</body>
+
+</html>
